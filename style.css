@@ -262,23 +262,44 @@ ul.timeline>li:before {
 }
 
 
-/*Contact info langues*/
+/* percent circle progress */
 
-.contactInfo.language .percent {
+.circle {
+    width: 100px;
+    margin: 6px 6px 20px;
+    display: inline-block;
     position: relative;
-    width: 100%;
-    height: 6px;
-    background: #081921;
-    display: block;
-    margin-top: 5px;
+    text-align: center;
+    line-height: 1.2;
+    color: #FFF;
 }
 
-.contactInfo.language .percent div {
+.circle canvas {
+    vertical-align: top;
+    width: 100px !important;
+}
+
+.circle strong {
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 0;
-    height: 100%;
-    background: #03a9f4;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.circle strong i {
+    font-style: normal;
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+.circle span {
+    display: block;
+    color: #fff;
+    margin-top: 12px;
 }
 
 
@@ -406,46 +427,6 @@ p {
     .skills .box {
         grid-template-columns: repeat(1, 1fr);
     }
-}
-
-
-/* percent circle progress */
-
-.circle {
-    width: 100px;
-    margin: 6px 6px 20px;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    line-height: 1.2;
-}
-
-.circle canvas {
-    vertical-align: top;
-    width: 100px !important;
-}
-
-.circle strong {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 30px;
-    color: #fff;
-}
-
-.circle strong i {
-    font-style: normal;
-    font-size: 0.6em;
-    font-weight: normal;
-}
-
-.circle span {
-    display: block;
-    color: #fff;
-    margin-top: 12px;
 }
 
 
