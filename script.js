@@ -25,3 +25,9 @@ $(document).ready(function($) {
     animateElements();
     $(window).scroll(animateElements);
 });
+
+
+var nbAnnées = document.getElementById("nbAnnees");
+var currentTime = new Date();
+var year = currentTime.getFullYear();
+nbAnnées.innerHTML = year - 2007;
