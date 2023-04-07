@@ -26,6 +26,13 @@ $(document).ready(function($) {
     $(window).scroll(animateElements);
 });
 
+let progressBars = document.querySelectorAll('.progress');
+progressBars.forEach(bar => {
+  let progress = bar.getAttribute('data-progress');
+  bar.style.width = progress + '%';
+});
+
+
 
 var nbAnnées = document.getElementById("nbAnnees");
 var currentTime = new Date();

@@ -377,12 +377,14 @@ p {
     background: #333;
 }
 
-.skills .box .percent div {
+.skills .box .percent .progress {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: #139fe0;
+    width: 0;
+    transition: width 1s ease;
 }
 
 .interest ul {
