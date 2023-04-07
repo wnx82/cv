@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -134,10 +135,12 @@ ul.timeline>li:before {
         box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
         transform: translatey(0px);
     }
+
     50% {
         box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
         transform: translatey(-20px);
     }
+
     100% {
         box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
         transform: translatey(0px);
@@ -408,9 +411,20 @@ p {
     .container {
         margin: 10px;
         grid-template-columns: repeat(1, 1fr);
+        background: none;
     }
+
     .interest ul {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contactInfo.language {
+        display: none;
     }
 }
 
@@ -418,14 +432,22 @@ p {
     .about .box {
         flex-direction: column;
     }
+
     .about .box .year_company {
         margin-bottom: 5px;
     }
+
     .interest ul {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .skills .box {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
     }
 }
 
