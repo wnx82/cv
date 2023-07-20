@@ -56,7 +56,7 @@ a:visited
 .container .left_Side {
     position: relative;
     background: #4682B4;
-    padding: 40px;
+    padding: 50px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     box-shadow: 0px 3px #03a9f4;
@@ -124,6 +124,7 @@ a:visited
 
 .faicon a:hover {
     color: #161718;
+    
     transform: rotateY(360deg);
     transition: transform 0.6s ease-in-out, color 0.4s linear;
 }
@@ -149,8 +150,9 @@ a:visited
 }
 
 .contactInfo a:hover {
-    color: #03a9f4;
-    text-decoration: underline;
+    color: #0d2b38;
+    text-decoration: none;
+    font-weight: bold; 
 }
 
 .contactInfo ul {
@@ -161,7 +163,7 @@ a:visited
     position: relative;
     list-style: none;
     margin: 10px 0;
-    cursor: pointer;
+
 }
 
 .contactInfo ul li .icon {
@@ -204,6 +206,8 @@ a:visited
 }
 
 
+
+
 /* percent circle progress */
 
 .circle {
@@ -244,6 +248,38 @@ a:visited
     margin-top: 12px;
 }
 
+/* En progress bar*/
+.contactInfo.language .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactInfo.language .box h4 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.contactInfo.language .box .percent {
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background: #333;
+}
+
+.contactInfo.language .box .percent .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #139fe0;
+    width: 0;
+    transition: width 1s ease;
+}
 
 /*==========================côté droit====================*/
 
@@ -276,6 +312,16 @@ p {
     display: inline-block;
     flex-direction: row;
     margin: 10px 0;
+}
+.xpTable .about .row ul li a{
+font-weight: bold; 
+    text-decoration: none;
+
+}
+.xpTable .about .row ul li a:hover{
+    color: #0d2b38;
+    text-decoration: none;
+    font-weight: bold; 
 }
 
 /* .about .box .year_company {
@@ -341,12 +387,12 @@ ul.timeline>li:before {
     z-index: 400;
 }
 
-.qrcode{
+.qrCode{
     float: right;
     margin-left: 20px;
     
 }
-.qrcode img{
+.qrCode img{
     
     width: 150px;
     height: 150px;
@@ -354,8 +400,12 @@ ul.timeline>li:before {
     border: 5px white solid;
     overflow: hidden;
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-    transform: rotate(12deg);
+    transform: rotate(10deg);
 
+}
+.qrCode img:hover
+{
+    box-shadow: 0 10px 25px 0px rgba(0, 0, 0, 0.6);
 }
 
 .skills .box {
@@ -423,6 +473,14 @@ em {
         margin: 10px;
         grid-template-columns: repeat(1, 1fr);
         background: none;
+    }
+
+    .xpTable {
+        width: 100%;
+    }
+  
+    .qrCode {
+        display: none;
     }
 
     .interest ul {
