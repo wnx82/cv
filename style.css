@@ -248,28 +248,34 @@ body {
     margin-top: 12px;
 }
 
-.contactInfo.contactInfo.language{
+.contactInfo.language{
     margin-right: 30px;
 }
-/* En progress bar*/
-.contactInfo.language .box {
-    position: relative;
+
+.contactInfo.language {
+    display: table; /* Use display: table to create table-like layout */
     width: 100%;
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    justify-content: center;
-    align-items: center;
-    
+}
+
+.contactInfo.language .box {
+    display: table-row; /* Use display: table-row to create rows within the table */
 }
 
 .contactInfo.language .box h4 {
+    display: table-cell;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 300;
-    
+    padding-right: 30px; /* Add padding to the right of the h4 element */
 }
 
-.contactInfo.language .box .percent {
+.contactInfo.language .box .content {
+    display: table-cell; /* Use display: table-cell to put the content on the right */
+    text-align: right; /* Align the content to the right within the cell */
+}
+
+/* En progress bar*/
+/* .contactInfo.language .box .percent {
     position: relative;
     width: 100%;
     height: 15px;
@@ -284,7 +290,7 @@ body {
     background: #139fe0;
     width: 0;
     transition: width 1s ease;
-}
+} */
 
 /*==========================côté droit====================*/
 
