@@ -319,11 +319,7 @@ p {
     color: #333;
 }
 
-.about .box {
-    display: inline-block;
-    flex-direction: row;
-    margin: 10px 0;
-}
+
 .xpTable .about .row ul li a{
     color: #0d2b38;
     text-decoration: none;
@@ -346,6 +342,11 @@ p {
     font-weight: 600;
 } */
 
+.about .box {
+    display: inline-block;
+    flex-direction: row;
+    margin: 10px ;
+}
 .about .box .text h4 {
     text-transform: uppercase;
     color: #2a7da2;
@@ -481,6 +482,12 @@ em {
 /*en fonction de la dimension de la fenêtre*/
 
 @media (max-width: 600px) {
+    .container .left_Side {
+
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
     .container {
         margin: 10px;
         grid-template-columns: repeat(1, 1fr);
