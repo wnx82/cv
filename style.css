@@ -424,7 +424,7 @@ ul.timeline>li:before {
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 250px 1fr;
     justify-content: center;
     align-items: center;
 }
