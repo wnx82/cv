@@ -54,7 +54,6 @@ body {
 
 #row2a, #row2b {
     grid-row: 2;
-
     
 }
 
@@ -80,6 +79,24 @@ body {
 #row2b {
     border: 0.5px solid rgba(94, 94, 94, 0.24);
     grid-column: 2;
+    padding-right: 50px;
+    margin-right: 50px;
+    padding: 40px;
+}
+
+#row3a {
+
+    border: 0.5px solid rgba(94, 94, 94, 0.24);
+
+    padding-left: 50px;
+    margin-left: 50px;
+    padding: 40px;
+        
+}
+
+#row3b {
+    border: 0.5px solid rgba(94, 94, 94, 0.24);
+
     padding-right: 50px;
     margin-right: 50px;
     padding: 40px;
