@@ -32,7 +32,7 @@ body {
     background: #fff;
     margin: 50px 0;
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
@@ -95,67 +95,7 @@ body {
     margin-bottom: 50px;
 }
 
-.experiance,.education .row ul li a{
-    color: #0d2b38;
-    text-decoration: none;
-    font-weight: bold; 
 
-}
-.experiance,.education .row ul li a:hover{
-    color: #458dac;
-    text-decoration: none;
-    font-weight: bold; 
-}
-
-
-
-ul.timeline {
-    list-style-type: none;
-    position: relative;
-    color: #000;
-}
-
-ul.timeline a {
-    color: #000;
-    text-decoration: none;
-}
-
-ul.timeline a:hover {
-    color: #03a9f4;
-    text-decoration: underline;
-}
-
-ul.timeline:before {
-    content: ' ';
-    background: #d4d9df;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 2px;
-    height: 100%;
-    z-index: 400;
-}
-
-ul.timeline>li {
-    margin: 00px 0;
-    padding-left: 60px;
-}
-
-ul.timeline>li:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #22c0e8;
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 400;
-}
-
-
-/* votre css ici */
 
 @media screen and (max-width: 768px) {
     .container {
