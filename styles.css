@@ -100,7 +100,7 @@ body {
     padding: 40px;
 }
 
-#row3 {
+#row4 {
     padding: 0 50px;
     border: 0.5px solid rgba(94, 94, 94, 0.24);
     margin: 0 50px;
@@ -455,7 +455,11 @@ ul.timeline>li:before {
         grid-template-columns: 1fr;
     }
 
-    #row1, #row2a, #row2b, #row3{
+    #row1{
+        display: block; 
+    }
+    #row1, #row2a, #row2b, #row3a, #row3b, #row4{
+        margin:auto;
         grid-column: 1 / span 1;
     }
 
@@ -464,7 +468,7 @@ ul.timeline>li:before {
         grid-row: 3;
     }
 
-    #row2a, #row2b {
+    #row2a, #row2b, #row3a, #row3b, #row4 {
         padding: 0 50px;
         margin: 0;
     }
@@ -472,6 +476,24 @@ ul.timeline>li:before {
     #row2a {
         display: block;
     }
+
+    .getintouch
+    {
+        display: none;
+
+    }
+    .qrCode{
+        display:none;
+    }
+
+    .hobbies
+    {
+        display: block;
+    }
+    .skills .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 
 }
 @keyframes float {
