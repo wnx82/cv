@@ -39,9 +39,21 @@ body {
 }
 
 /* Rows */
+#flag {
+    background-color: rgb(58, 70, 78);
+    grid-column: 1 / span 2;
+}
 #row1 {
     grid-column: 1 / span 2;
     border:none;
+}
+
+#row2a {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 1;
+    padding-left: 50px;
+
 }
 #row2a, #row2b {
     grid-row: 2;
@@ -51,18 +63,10 @@ body {
 #row2a1, #row2a2 {
     border: 0.5px solid rgba(94, 94, 94, 0.24);
     padding: 40px;
-    
+    padding-bottom: 0;
 }
 #row2a1{
     margin-bottom: 10px;
-}
-/* Padding and margins */
-#row2a {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-column: 1;
-    padding-left: 50px;
-
 }
 
 #row2b {
@@ -70,6 +74,7 @@ body {
     grid-column: 2;
     margin-right: 50px;
     padding: 40px;
+     padding-bottom: 10;
 }
 #row3a {
     border: 0.5px solid rgba(94, 94, 94, 0.24);
@@ -127,9 +132,6 @@ body {
     background-color: rgb(58, 70, 78);
     padding: 25px;
 }
-
-
-
 
 /*Colonne 1 Avatar & name*/
 .avatar{
@@ -253,15 +255,29 @@ display: block; /* Utiliser "block" au lieu de "inline-block" */
 }
 
 
-
 /*Colonne 4 QR Code */
-.qrCode{
+.qrCode {
+    position: relative;
     margin: auto;
-
-    
 }
-.qrCode img{
-    
+
+/* Pour positionner le drapeau en haut à droite */
+.choixLangue {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px; /* Ajustez le padding selon vos préférences */
+}
+
+/* Pour centrer l'image du drapeau */
+.choixLangue img {
+    width: 30px; /* Ajustez la taille du drapeau selon vos préférences */
+    height: auto;
+    display: block;
+}
+
+/* Styles du QR Code */
+.qrCode img {
     width: 150px;
     height: 150px;
     box-sizing: border-box;
@@ -269,10 +285,9 @@ display: block; /* Utiliser "block" au lieu de "inline-block" */
     overflow: hidden;
     box-shadow: 0 2px 5px 0px rgba(255, 255, 255, 0.6);
     transform: rotate(10deg);
-
 }
-.qrCode img:hover
-{
+
+.qrCode img:hover {
     box-shadow: 0 5px 10px 0px rgba(255, 255, 255, 0.6);
 }
 
@@ -304,7 +319,7 @@ display: block; /* Utiliser "block" au lieu de "inline-block" */
     text-align: right; /* Align the content to the right within the cell */
 }
 
-/* Education and Experience */
+
 .education .row ul li a, 
 .experience .row ul li a {
     color: #0d2b38;
