@@ -162,7 +162,7 @@ body {
     line-height: 1.4em;
 }
 .name h2:hover {
-    color: #0d2b38;
+    color: #a19c9c;
 }
 .name h2 span {
     font-size: 0.8em;
@@ -180,13 +180,15 @@ body {
 .contactInfo a {
     color: #fff;
     text-decoration: none;
+
 }
 
 .contactInfo a:hover {
-    color: #0d2b38;
+    color: #fff;          /* La couleur reste blanche au survol */
+    font-weight: bold;    /* Le texte devient gras au survol */
     text-decoration: none;
-}
 
+}
 .contactInfo ul {
     position: relative;
 }
@@ -259,6 +261,12 @@ display: block; /* Utiliser "block" au lieu de "inline-block" */
 .qrCode {
     position: relative;
     margin: auto;
+    
+}
+
+.qrCode a img{
+    width: 75%; 
+    height: 75%;
 }
 
 /* Pour positionner le drapeau en haut à droite */
