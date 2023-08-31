@@ -286,7 +286,7 @@ display: block; /* Utiliser "block" au lieu de "inline-block" */
 }
 
 /* Styles du QR Code */
-.qrCode img {
+.imgQrCode img {
     width: 150px;
     height: 150px;
     box-sizing: border-box;
@@ -296,27 +296,35 @@ display: block; /* Utiliser "block" au lieu de "inline-block" */
     transform: rotate(10deg);
 }
 
-.qrCode img:hover {
+.imgQrCode img:hover {
     box-shadow: 0 5px 10px 0px rgba(255, 255, 255, 0.6);
 }
 
-
-
-
-/* Pour positionner le la langue en haut à droite */
-.choixLangue {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px; /* Ajustez le padding selon vos préférences */
+.langChoice {
+    display: flex;
+    align-items: center;
 }
 
-/* Pour centrer l'image du drapeau */
-.choixLangue img {
-    width: 30px; /* Ajustez la taille du drapeau selon vos préférences */
+.langChoice a {
+    margin: 0 5px;  /* ajoute une marge entre les drapeaux */
+    display: inline-block;
+}
+
+.langChoice img {
+    width: 30px;  /* ajustez la taille comme vous le souhaitez */
     height: auto;
-    display: block;
+    /* border: 1px solid #ddd;   */
+    /* une petite bordure pour que les drapeaux ressortent */
+    padding: 2px;
 }
+
+/* Si vous souhaitez ajouter un effet au survol */
+.langChoice a:hover img {
+    /* border-color: #ddd; */
+    box-shadow: 0 5px 0px 0px rgba(255, 255, 255, 0.6);
+}
+
+
 
 
 /* Langues */
