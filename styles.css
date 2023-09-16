@@ -39,10 +39,7 @@ body {
 }
 
 /* Rows */
-#flag {
-    background-color: rgb(58, 70, 78);
-    grid-column: 1 / span 2;
-}
+
 #row1 {
     grid-column: 1 / span 2;
     border:none;
@@ -99,6 +96,18 @@ body {
 }
 
 
+.header {
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgb(58, 70, 78);
+    padding: 25px;
+}
 
 .title {
     color: #003147;
@@ -122,11 +131,7 @@ body {
 .langChoice {
     justify-content:right;
     padding-bottom: 50px;
-    background-color: rgb(58, 70, 78);
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: right;
-    font-size: 0.9em;
+
 }
 
 .langChoice a {
@@ -140,18 +145,7 @@ body {
     font-weight: bold;
 }
 
-.header {
-    position: relative;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between; 
-    align-items: center;
-    flex-wrap: wrap; 
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: rgb(58, 70, 78);
-    padding: 25px;
-}
+
 
 /*Colonne 1 Avatar & name*/
 .avatar{
@@ -192,7 +186,7 @@ body {
 /*Colonne 2 contact info*/
 
 .contactInfo {
-    padding-top: 40px;
+    padding-top: 10px;
     margin-left: 50px;
 
 }
@@ -526,7 +520,7 @@ ul.timeline>li:before {
     .contactInfo, .skills, .hobbies{
         margin: 10px;
     }
-    .getintouch, .qrCode {
+    .getintouch, .imgQrCode {
         display: none;
     }
 
