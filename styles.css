@@ -354,7 +354,39 @@ display: block; /* Utiliser "block" au lieu de "inline-block" */
 
 }
 
-/*Education*/
+/*education*/ 
+/* Style général pour la section Éducation */
+.education {
+    padding: 20px;
+}
+
+.education .title {
+    font-size: 24px;
+    color: #0d2b38;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+
+.education .timeline li a {
+    color: #0d2b38;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.education .timeline li a:hover {
+    color: #458dac;
+}
+
 .details {
     margin-top: 10px;
     font-size: 14px;
@@ -367,7 +399,7 @@ display: block; /* Utiliser "block" au lieu de "inline-block" */
 }
 
 .details i {
-    margin-right: 10px;
+    margin-right: 8px;
     color: #458dac;
     font-size: 16px;
 }
@@ -383,11 +415,9 @@ display: block; /* Utiliser "block" au lieu de "inline-block" */
 }
 
 .details p {
-    margin-top: 10px;
-    line-height: 1.6;
+    line-height: 1.4;
     color: #333;
 }
-
 
 /* Skills */
 
