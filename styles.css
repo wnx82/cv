@@ -373,10 +373,10 @@ display: block; /* Utiliser "block" au lieu de "inline-block" */
 }
 
 .timeline li {
-    margin-bottom: 30px;
-    padding-left: 15px;
+    margin-bottom: 20px;
 }
 
+/* Lien pour les établissements */
 .education .timeline li a {
     color: #0d2b38;
     text-decoration: none;
@@ -387,23 +387,19 @@ display: block; /* Utiliser "block" au lieu de "inline-block" */
     color: #458dac;
 }
 
-.details {
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.details span, .details p {
+.adresse, .date, .details p {
     display: flex;
     align-items: center;
     margin-top: 8px;
 }
 
-.details i {
+.adresse i, .date i, p i {
     margin-right: 8px;
     color: #458dac;
     font-size: 16px;
 }
 
+/* Styles supplémentaires pour l'alignement */
 .adresse {
     font-style: italic;
     color: #555;
@@ -415,9 +411,11 @@ display: block; /* Utiliser "block" au lieu de "inline-block" */
 }
 
 .details p {
+    margin-top: 8px;
     line-height: 1.4;
     color: #333;
 }
+
 
 /* Skills */
 
