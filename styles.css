@@ -370,7 +370,7 @@ display: block; /* Utiliser "block" au lieu de "inline-block" */
 }
 
 /* Date styling */
-.date {
+.adresse .date {
     display: block;
     text-align: left;
 }
