@@ -354,25 +354,38 @@ display: block; /* Utiliser "block" au lieu de "inline-block" */
 
 }
 
-
-.education .row ul li a, 
-.experience .row ul li a {
-    color: #0d2b38;
-    text-decoration: none;
-    font-weight: bold; 
+/*Education*/
+.details {
+    margin-top: 10px;
+    font-size: 14px;
 }
 
-.education .row ul li a:hover, 
-.experience .row ul li a:hover {
+.details span, .details p {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.details i {
+    margin-right: 10px;
     color: #458dac;
-    text-decoration: none;
-    font-weight: bold; 
+    font-size: 16px;
 }
 
-/* Date styling */
-.adresse .date {
-    display: block;
-    text-align: left;
+.adresse {
+    font-style: italic;
+    color: #555;
+}
+
+.date {
+    font-weight: bold;
+    color: #0d2b38;
+}
+
+.details p {
+    margin-top: 10px;
+    line-height: 1.6;
+    color: #333;
 }
 
 
